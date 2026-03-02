@@ -7,6 +7,7 @@
 <script setup lang="ts">
   import { ref } from 'vue'
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const props = defineProps<{ disabled?: boolean }>()
   const emit = defineEmits<{ resultado: [data: object[]] }>()
   const loading = ref(false)

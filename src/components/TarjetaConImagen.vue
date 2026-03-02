@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/custom-event-name-casing -->
 <template>
   <v-card class="mx-auto" max-width="250">
     <v-img cover height="200" :src="imagen" @load="$emit('imagenCargada')" />
@@ -14,7 +15,6 @@
 <script>
   export default {
     name: 'TarjetaConImagen',
-    emits: ['imagenCargada'],
     props: {
       imagen: {
         type: String,
@@ -33,6 +33,7 @@
         required: true,
       },
     },
+    emits: ['imagenCargada'],
   }
 </script>
 
